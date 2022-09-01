@@ -47,6 +47,12 @@ app.get('/',(req,res)=>{
     res.render('index')
 })
 
+//HANDLES RSVP
+
+app.get('/rsvp',(req,res)=>{
+    res.render('rsvp')
+})
+
 //Handles all other pages
 app.get('/:page',(req,res)=>{
 
