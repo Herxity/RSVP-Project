@@ -40,12 +40,14 @@ app.listen(port, ()=>{
 
 //GET endpoints
 
+//HANDLES FIRST PAGE
 app.get('/',(req,res)=>{
     //HANDLES MAIN PAGE
     //Make sure dependencies list 'ejs' as dependency else this may throw error when running
     res.render('index')
 })
 
+//Handles all other pages
 app.get('/:page',(req,res)=>{
 
     let path = ""
@@ -57,8 +59,6 @@ app.get('/:page',(req,res)=>{
         case 'about-me':
             res.render('about')
             break
-        case '':
-            res.render('index')
         default:
             res.render('404')
             break
