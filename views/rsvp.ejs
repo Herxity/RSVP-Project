@@ -3,6 +3,7 @@
         <title> RSVP HERE!!!</title>
     </head>
     <body>
+        <%- include('./partials/head.ejs')%>
         <form id="form" name="RSVP form" accept-charset="utf-8" action="" method="post">
             <label for="full-name">Full Name</label>
             <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
@@ -15,6 +16,22 @@
             </select>
             <br>
             <input type="submit" value="RSVP">
-          </form>
+        </form>
+        <%- include('./partials/nav.ejs')%>
+        <h3> Other Guests - (Very Secure, Totally)</h3>
+        <ul>
+            <%if(guests.length > 0) { %>
+                <%guests.forEach(guest=>{%>
+                    <li>
+                        <h3 class = "name">Name: <%=guest.name%></h3>
+                        <p class = "attending">Are they going?: <%=guest.attending%></p>
+                    </li>
+
+                <%})%>
+            <%} else {%>
+                <p>No attendees...</p>
+            <%}%>
+        </ul>
+        
     </body>
 </html>
