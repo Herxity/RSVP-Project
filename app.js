@@ -5,6 +5,13 @@ const Joi = require('joi')
 const app = express();
 const fs = require('fs')
 const morgan = require('morgan')
+const mongoose = require('mongoose')
+
+//Database link to MongoD B
+const dbURI = 'mongodb+srv://NodeJsAPI:cE8RtsZuCiJugI4x@cluster0.blwrvz9.mongodb.net/NodeTutorial?retryWrites=true&w=majority'
+mongoose.connect(dbURI, {useNewUrlParser:true, useUnifiedTopology:true}).then((result)=>)
+
+
 app.use(express.json());
 
 // register view engine
