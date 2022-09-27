@@ -5,13 +5,13 @@
   "main": "index.js",
   "dependencies": {
     "dotenv": "^16.0.2",
-    "ejs": "^3.1.8",
     "express": "^4.18.1",
     "joi": "^13.7.0",
     "mongoose": "^6.6.1",
     "morgan": "^1.10.0",
     "node": "^16.17.0",
-    "nodemon": "^2.0.19"
+    "nodemon": "^2.0.19",
+    "nvm": "0.0.4"
   },
   "devDependencies": {
     "@types/node": "^18.7.14",

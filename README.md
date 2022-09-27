@@ -5,6 +5,6 @@ An attempt at creating an RSVP Project
 ## Install Dependencies
 `sudo apt-get update`
 
-`npm install dotenv ejs express joi node nodemon morgan`
+`npm install`
 # Run
-`npm run devStart`
+`npm start`

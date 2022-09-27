@@ -8,21 +8,13 @@ const morgan = require('morgan')
 const mongoose = require('mongoose')
 
 //Database link to MongoD B
-const dbURI = 'mongodb+srv://NodeJsAPI:cE8RtsZuCiJugI4x@cluster0.blwrvz9.mongodb.net/NodeTutorial?retryWrites=true&w=majority'
-mongoose.connect(dbURI, {useNewUrlParser:true, useUnifiedTopology:true}).then((result)=>)
 
 
 app.use(express.json());
 
 // register view engine
 
-//Array of Courses
-const guests = [
-    {name:"Michael Jackson", attending:"No"},
-    {name:"Ronald McDonald", attending:"Yes"},
-    {name:"Elvis Presley", attending:"No"},
-    {name:"Elmo", attending:"No"},
-]
+//Array of Guests
 
 //To learn about all the properties you can use, read the EXPRESS docs
 app.use(morgan('dev'))
